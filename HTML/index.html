@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="/JS/script.js"></script>
+</head>
+<body>
+    <div class="Wrapper">
+    
+    <h2>BMI Calculator</h2>
+                <div class="bmi-container">
+                        <div class="bmi-input_kilogram">
+                            <p id= "lebel-weight"> น้ำหนักตัว (kg.)</p>
+                            <input type="number" id="Value-kilo" name="Value-kilo">
+                        </div>
+                        <div class="bmi-input_metre">
+                            <p id= "lebel-height"> ส่วนสูง (cm.)</p>
+                            <input type="number" id="Value-metre" name="Value-metre">
+                        </div>
+                        <form class="Form-content">
+                            <button type="button" onclick="Cal_bmi()" class="btn btn-primary">คำนวณ BMI</button>
+                            <button type="button" onclick="Refresh_Page()"class="btn btn-danger">ล้างข้อมูล</button>
+                        </form>
+                        <div class="bmi-output">
+                            <input type="text" id="result" name="result">
+                        </div>
+                        
+                </div>    
+            
+            <table class="bmi-knowledge-table" >
+                    <tr>
+                        <th>BMI kg/m2</th>
+                        <th>อยู่ในเกณท์</th>
+                        <th>ภาวะเสี่ยงต่อโรค</th>
+                    </tr>
+                    <tr>
+                        <td>น้อยกว่า 18.50</td>
+                        <td>น้ำหนักน้อย / ผอม</td>
+                        <td>มากกว่าคนปกติ</td>
+                    </tr>
+                    <tr>
+                        <td>ระหว่าง 18.50 - 22.90	</td>
+                        <td>ปกติ (สุขภาพดี)</td>
+                        <td>เท่าคนปกติ</td>
+                    </tr>
+                    <tr>
+                        <td>ระหว่าง 23 - 24.90</td>
+                        <td>ท้วม / โรคอ้วนระดับ 1</td>
+                        <td>อันตรายระดับ 1</td>
+                    </tr>
+                    <tr>
+                        <td>ระหว่าง 25 - 29.90</td>
+                        <td>อ้วน / โรคอ้วนระดับ 2</td>
+                        <td>อันตรายระดับ 2</td>
+                    </tr>
+                    <tr>
+                        <td>มากกว่า 30</td>
+                        <td>อ้วนมาก / โรคอ้วนระดับ 3</td>
+                        <td>อันตรายระดับ 3</td>
+              
+                    </tr>
+                
+                
+                
+                
+                </table>
+            
+
+    </div>
+
+</body>
+</html>
